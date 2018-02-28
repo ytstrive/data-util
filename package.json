@@ -1,0 +1,30 @@
+{
+  "name": "data-util",
+  "version": "1.0.0",
+  "description": "数据转换工具",
+  "main": "index.js",
+  "author": "ytstrive",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --config build/webpack.config.js --watch",
+    "build": "webpack --hide-modules --config build/webpack.config.js",
+    "test": "jest"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/test/calculate.test.js"
+    ]
+   
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "jest": "^20.0.4",
+    "path": "^0.12.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.15.0"
+  }
+}
