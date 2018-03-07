@@ -1,1 +1,2 @@
-export  calculate from './calculate';
+import util from './util';
+export default Object.assign({}, util);

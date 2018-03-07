@@ -1,14 +1,17 @@
-
-export const keys = Object.keys;
-export const values = Object.values;
-export const ObjProto = Object.prototype;
-export const ArrayProto = Array.prototype;
-export const FuncProto = Function.prototype;
-export const toString = ObjProto.toString;
-/**
- * 转换数字
- * @param {*} value 
- */
-export const toNumber = (value) => {
-    return toString.call(value) === '[object Number]'? value : 0;
+const keys = Object.keys;
+const values = Object.values;
+const ObjProto = Object.prototype;
+const ArrayProto = Array.prototype;
+const FuncProto = Function.prototype;
+const toString = ObjProto.toString;
+export default {
+    keys,
+    values,
+    ObjProto,
+    ArrayProto,
+    FuncProto,
+    toString,
+    toNumber: (value) => {
+        return toString.call(value) === '[object Number]' ? value : 0
+    }
 }
