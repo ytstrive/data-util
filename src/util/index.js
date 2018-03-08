@@ -52,5 +52,24 @@ export default {
         }
 
         return obj1;
+    },
+    /**
+     * 按照value 排序 (value类型=Number)
+     * @param {any} [data={}] 
+     * @param {String} [order='asc'] |'desc'
+     * @returns Map
+     */
+    sort(data = {}, order = 'asc') {
+        if (pro.toString.call(data) !== '[object Object]') {
+            return data;
+        }
+        const map = new Map();
+        let keys = pro.keys(data).sort((a, b) => {
+            const aNum = pro.toNumber(data[a]), bNum = pro.toNumber(data[b]);
+            return order === 'asc' ? aNum - bNum : bNum - aNum;
+        }).forEach((key) => {
+            map.set(key, data[key]);
+        });
+        return map;
     }
 }

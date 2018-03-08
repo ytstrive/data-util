@@ -24,8 +24,8 @@ describe('util.scale', () => {
 })
 describe('util.mergeRecursive', () => {
 
-    it('scale.mergeRecursive.1', () => {
-        let data = {
+    it('mergeRecursive.1', () => {
+        const data = {
             a: 'a',
             b: 1,
             c: false,
@@ -43,5 +43,52 @@ describe('util.mergeRecursive', () => {
         }
         const mergeRecursive = util.mergeRecursive(data, data2);
         console.log(mergeRecursive);
+    })
+})
+describe('util.sort', () => {
+
+    it('sort.1.asc', () => {
+        const data = {
+            a: 20,
+            b: 15,
+            c: 30,
+            d: 12,
+            e: 89
+        }
+        const sort = util.sort(data);
+        console.log(sort);
+    })
+    it('sort.1.desc', () => {
+        const data = {
+            a: 20,
+            b: 15,
+            c: 30,
+            d: 12,
+            e: 89
+        }
+        const sort = util.sort(data, 'desc');
+        console.log(sort);
+    })
+    it('sort.2.asc', () => {
+        const data = {
+            1: 20,
+            a: 15,
+            '-9': 3,
+            b: 2,
+            c: 31
+        };
+        const sort = util.sort(data);
+        console.log(sort);
+    })
+    it('sort.2.desc', () => {
+        const data = {
+            1: 20,
+            a: 15,
+            '-9': 3,
+            b: 2,
+            c: 31
+        };
+        const sort = util.sort(data, 'desc');
+        console.log(sort);
     })
 })
