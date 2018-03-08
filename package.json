@@ -12,7 +12,7 @@
   },
   "jest": {
     "testMatch": [
-      "<rootDir>/test/calculate.test.js"
+      "<rootDir>/test/util.test.js"
     ]
    
   },
