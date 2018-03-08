@@ -55,7 +55,7 @@ export default {
     },
     /**
      * 按照value 排序 (value类型=Number)
-     * @param {any} [data={}] 
+     * @param {Object} [data={}] 
      * @param {String} [order='asc'] |'desc'
      * @returns Map
      */
