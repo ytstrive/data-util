@@ -45,10 +45,6 @@ describe('util.mergeRecursive', () => {
         console.log(mergeRecursive);
     })
 })
-/**
- * 由于Object对象属性的输出顺序是无序的,所以返回值使用Map类型
- * http://w3help.org/zh-cn/causes/SJ9011
- */
 describe('util.sort', () => {
 
     it('sort.1.asc', () => {
@@ -94,5 +90,13 @@ describe('util.sort', () => {
         };
         const sort = util.sort(data, 'desc');
         console.log(sort);
+    })
+})
+describe('util.toLower', () => {
+
+    it('toLower.1', () => {
+        const data = 'abcDEFG';
+        const toLower = util.toLower(data);
+        console.log(toLower);
     })
 })

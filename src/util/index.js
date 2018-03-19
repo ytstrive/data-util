@@ -55,6 +55,8 @@ export default {
     },
     /**
      * 按照value 排序 (value类型=Number)
+     * 由于Object对象属性的输出顺序是无序的,所以返回值使用Map类型
+     * http://w3help.org/zh-cn/causes/SJ9011
      * @param {Object} [data={}] 
      * @param {String} [order='asc'] |'desc'
      * @returns Map
@@ -71,5 +73,13 @@ export default {
             map.set(key, data[key]);
         });
         return map;
+    },
+    /**
+     * 转换小写
+     * @param {String} [data=''] 
+     * @returns String
+     */
+    toLower(data = '') {
+        return data.replace(/[A-Z]/g, (word) => { return word.toLowerCase() });
     }
 }
