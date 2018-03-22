@@ -2,7 +2,7 @@
   "name": "data-util",
   "version": "1.0.0",
   "description": "数据转换工具",
-  "main": "index.js",
+  "main": "dist/data-util-min.js",
   "author": "ytstrive",
   "license": "MIT",
   "scripts": {
