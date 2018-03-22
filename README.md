@@ -1,4 +1,5 @@
 # data-util
+![](https://img.shields.io/badge/npm-1.0.0-green.svg)</br>
 一个简单的工具类</br>
 ## Install
 ```
