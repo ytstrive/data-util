@@ -1,5 +1,5 @@
 {
-  "name": "data-util",
+  "name": "js-data-util",
   "version": "1.0.0",
   "description": "数据转换工具",
   "main": "dist/data-util-min.js",
