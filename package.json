@@ -2,6 +2,11 @@
   "name": "js-data-util",
   "version": "1.0.0",
   "description": "数据转换工具",
+  "keywords":[
+    "data-util",
+    "js-data",
+    "js-util"
+  ],
   "main": "dist/data-util-min.js",
   "author": "ytstrive",
   "license": "MIT",
