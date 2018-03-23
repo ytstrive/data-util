@@ -81,5 +81,14 @@ export default {
      */
     toLower(data = '') {
         return data.replace(/[A-Z]/g, (word) => { return word.toLowerCase() });
+    },
+    /**
+     * 千位分隔符
+     * @param {Number} num 
+     * @returns String
+     */
+    milliFormat(data = 0) {
+        return data && data.toString()
+            .replace(/(^|\s)\d+/g, (m) => m.replace(/(?=(?!\b)(\d{3})+$)/g, ','))
     }
 }

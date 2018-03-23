@@ -96,3 +96,20 @@ const data = {
 const sort = util.sort(data, 'desc');
 console.log(sort);//Map { 'c' => 31, '1' => 20, 'a' => 15, '-9' => 3, 'b' => 2 }
 ```
+### toLower
+```
+const data = 'AbcDEFG';
+const toLower = util.toLower(data);
+console.log(toLower);//abcdefg
+```
+### milliFormat
+```
+const data = 987654321;
+const milliFormat = util.milliFormat(data);
+console.log(milliFormat);//987,654,321
+```
+```
+const data = '123456.789';
+const milliFormat = util.milliFormat(data);
+console.log(milliFormat);//123,456.789
+```

@@ -95,8 +95,21 @@ describe('util.sort', () => {
 describe('util.toLower', () => {
 
     it('toLower.1', () => {
-        const data = 'abcDEFG';
+        const data = 'AbcDEFG';
         const toLower = util.toLower(data);
         console.log(toLower);//abcdefg
+    })
+})
+describe('util.milliFormat', () => {
+
+    it('milliFormat.1', () => {
+        const data = 987654321;
+        const milliFormat = util.milliFormat(data);
+        console.log(milliFormat);//987,654,321
+    })
+    it('milliFormat.2', () => {
+        const data = '123456.789';
+        const milliFormat = util.milliFormat(data);
+        console.log(milliFormat);//123,456.789
     })
 })
