@@ -23,6 +23,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "jest": "^20.0.4",
     "path": "^0.12.7",
+    "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "^3.5.2",
     "webpack-dev-server": "^3.1.0"
   }
