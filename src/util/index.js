@@ -43,6 +43,8 @@ export default {
                         obj1[p] = {}
                     }
                     obj1[p] = this.mergeRecursive(obj1[p], obj2[p])
+                } else if (obj2[p].constructor === Array) {
+                    obj1[p] = (obj1[p] || []).concat(obj2[p])
                 } else {
                     obj1[p] = obj2[p]
                 }

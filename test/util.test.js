@@ -44,6 +44,16 @@ describe('util.mergeRecursive', () => {
         const mergeRecursive = util.mergeRecursive(data, data2);
         console.log(mergeRecursive);//{a:'a',b:1,c:false,d:undefined,e:{e1:'e1',e2:'e2'},f:[Function:f]}
     })
+    it('mergeRecursive.2', () => {
+        const data = {
+            a: [1, 2, 3]
+        };
+        const mergeRecursive1 = util.mergeRecursive({}, data);
+        mergeRecursive1.a.push(4, 5, 6);
+        console.log(mergeRecursive1);//{ a: [ 1, 2, 3, 4, 5, 6 ] }
+        const mergeRecursive2 = util.mergeRecursive({}, data);
+        console.log(mergeRecursive2);//{ a: [ 1, 2, 3 ] }
+    })
 })
 describe('util.sort', () => {
 
